@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style>
+	#wrap { width: 600px; margin: 0px; }
+	#writer {width: 150px;}
+	#write {width: 300px; }
+	#wrap fieldset legend {text-align: center;}	
+	textarea { width: 400px }
+</style>
+</head>
+<body>
+	<div id="wrap">
+		<fieldset>
+			<legend>게시판</legend>
+			<form method="post" action="boardInsert.jsp">
+				<table>
+					<tr>
+					<td>작성자</td>
+					<td>
+						<input type="writer" id="writer" name="writer">
+					</td>
+					</tr>
+					<tr>
+						<td>비밀번호</td>
+					<td>
+						<input type="password" id="pwd" name="pwd">
+					</tr>
+					<tr>
+						<td>
+							<td colspan="2">
+							<textarea rows="10" cols="10" id="cont" name="cont"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+						<input type="submit" value="글쓰기">
+						<input type="button" value="List" onclick="location='boardList.jsp'">
+						</td>					
+				</table>
+				</form>
+		</fieldset>
+	</div>
+</body>
+</html>
